@@ -79,6 +79,9 @@ a {
 }
 
 .navToggleBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   bottom: 40px;
   right: 24px;
   /* color: rgba(255, 255, 255, 0.8); */
