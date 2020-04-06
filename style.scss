@@ -1,0 +1,130 @@
+* {
+  /* Remove Gray Highlight When Tapping Links in Mobile Safari */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-appearance: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 0px;
+  box-sizing: border-box;
+}
+button,
+a {
+  cursor: pointer;
+  outline: none;
+}
+// .displayHidden {
+//   display: none !important;
+// }
+.opacityZero {
+  opacity: 0 !important;
+}
+
+.landing {
+  background-color: darkgray;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+}
+
+.navLogoImg {
+  display: block;
+  width: 268px;
+  margin: 20px auto 0 auto;
+}
+.myNameKey {
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Jura", sans-serif;
+  // font-family: "Chathura", sans-serif;
+  font-family: "Kite One", sans-serif;
+  font-family: "Tomorrow", sans-serif;
+  // font-size: 20px;
+  position: absolute;
+  left: 31px;
+  top: 235px;
+}
+.myNameValue {
+  font-family: "Fjalla One", sans-serif;
+  position: absolute;
+  left: 162px;
+  top: 231px;
+  letter-spacing: 0.6px;
+  font-size: 20px;
+}
+.jobDescriptionKey {
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Jura", sans-serif;
+  // font-family: "Chathura", sans-serif;
+  font-family: "Kite One", sans-serif;
+  font-family: "Tomorrow", sans-serif;
+  // font-size: 20px;
+  position: absolute;
+  left: 30px;
+  top: 274px;
+}
+.jobDescriptionValue {
+  // font-family: "Barlow Condensed", sans-serif;
+  font-family: "Fjalla One", sans-serif;
+  position: absolute;
+  left: 124px;
+  top: 270px;
+  letter-spacing: 0.2px;
+  font-size: 20px;
+}
+.landingText {
+  font-family: "Kite One", sans-serif;
+  font-family: "Tomorrow", sans-serif;
+  width: 259px;
+  margin: 92px auto 0px auto;
+  line-height: 44px;
+}
+
+.navToggleBtn {
+  bottom: 40px;
+  right: 24px;
+  /* color: rgba(255, 255, 255, 0.8); */
+  position: fixed;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  border: none;
+  background-color: rgba(51, 51, 51, 0.4);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+// .navSS {
+//   height: 88px;
+// }
+// .navLogoSS {
+//   width: 112px;
+// }
+// .navLogoImgSS {
+//   width: 92px;
+// }
+// .logoTextTopSS {
+//   font-size: 31px;
+//   top: 15px;
+//   right: 18px;
+//   left: initial;
+// }
+// .logoTextBottomSS {
+//   font-size: 26px;
+//   top: 46px;
+//   right: 20px;
+//   left: initial;
+// }
+// .navToggleBtnSS {
+//   display: none;
+// }
+
+.backToTopBtn {
+  bottom: 14%;
+  right: 24px;
+  /* color: rgba(255, 255, 255, 0.8); */
+  position: fixed;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: rgba(51, 51, 51, 0.4);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
