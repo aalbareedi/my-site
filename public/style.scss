@@ -101,31 +101,6 @@ a {
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-// .navSS {
-//   height: 88px;
-// }
-// .navLogoSS {
-//   width: 112px;
-// }
-// .navLogoImgSS {
-//   width: 92px;
-// }
-// .logoTextTopSS {
-//   font-size: 31px;
-//   top: 15px;
-//   right: 18px;
-//   left: initial;
-// }
-// .logoTextBottomSS {
-//   font-size: 26px;
-//   top: 46px;
-//   right: 20px;
-//   left: initial;
-// }
-// .navToggleBtnSS {
-//   display: none;
-// }
-
 .backToTopBtn {
   bottom: 14%;
   right: 24px;
@@ -147,10 +122,16 @@ a {
   // display: none;
 }
 .navGrid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  // display: grid;
+  // grid-template-columns: repeat(1, 1fr);
+  // grid-template-rows: repeat(3, 1fr);
 }
-.navGridOption {
-  text-align: center;
-}
+// .navGridOption {
+//   font-family: "Fjalla One", sans-serif;
+//   font-size: 28px;
+//   text-align: center;
+//   height: 33.33vh;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }

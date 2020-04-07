@@ -126,17 +126,4 @@ a {
   width: 100%;
   position: fixed;
 }
-
-.navGrid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
-}
-
-.navGridOption {
-  text-align: center;
-}
 /*# sourceMappingURL=style.css.map */
