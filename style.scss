@@ -23,14 +23,13 @@ a {
   background-color: darkgray;
   height: 100vh;
   width: 100%;
-  padding-top: 12px;
-  // position: fixed;
+  position: fixed;
 }
 
 .navLogoImg {
   display: block;
   width: 278px;
-  margin: 0px auto 12px auto;
+  margin: 12px auto 12px auto;
 }
 .introBox {
   position: relative;
@@ -41,6 +40,7 @@ a {
   margin-bottom: 10px;
 }
 .myNameKey {
+  color: orange;
   display: inline-block;
   // font-family: "Barlow Condensed", sans-serif;
   // font-family: "Jura", sans-serif;
