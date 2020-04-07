@@ -4,8 +4,8 @@ let scrollingElement =
 
 // let backToTopBtn = document.getElementById("backToTopBtn");
 let backToTopBtn = document.querySelector(".backToTopBtn");
+let navToggleBtn = document.querySelector(".navToggleBtn");
 
-// let navbar = document.querySelector("nav");
 // let navLogo = document.querySelector(".navLogo");
 // let navLogoImg = document.querySelector(".navLogoImg");
 // let logoTextTop = document.querySelector(".logoTextTop");
