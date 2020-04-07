@@ -23,49 +23,53 @@ a {
   background-color: darkgray;
   height: 100vh;
   width: 100%;
-  position: fixed;
+  padding-top: 12px;
 }
 
 .navLogoImg {
   display: block;
+  width: 278px;
+  margin: 0px auto 12px auto;
+}
+
+.introBox {
+  position: relative;
   width: 268px;
-  margin: 20px auto 0 auto;
+  margin: 0 auto 18px auto;
+}
+
+#lastIntroBox {
+  margin-bottom: 10px;
 }
 
 .myNameKey {
-  font-family: "Barlow Condensed", sans-serif;
-  font-family: "Jura", sans-serif;
-  font-family: "Kite One", sans-serif;
+  display: inline-block;
   font-family: "Tomorrow", sans-serif;
-  position: absolute;
-  left: 31px;
-  top: 235px;
+  letter-spacing: 0.4px;
 }
 
 .myNameValue {
-  font-family: "Fjalla One", sans-serif;
   position: absolute;
-  left: 162px;
-  top: 231px;
+  top: -4px;
+  right: 0;
+  display: inline-block;
+  font-family: "Fjalla One", sans-serif;
   letter-spacing: 0.6px;
   font-size: 20px;
 }
 
 .jobDescriptionKey {
-  font-family: "Barlow Condensed", sans-serif;
-  font-family: "Jura", sans-serif;
-  font-family: "Kite One", sans-serif;
+  display: inline-block;
   font-family: "Tomorrow", sans-serif;
-  position: absolute;
-  left: 30px;
-  top: 274px;
+  letter-spacing: 0.4px;
 }
 
 .jobDescriptionValue {
-  font-family: "Fjalla One", sans-serif;
   position: absolute;
-  left: 124px;
-  top: 270px;
+  right: 0;
+  top: -4px;
+  display: inline-block;
+  font-family: "Fjalla One", sans-serif;
   letter-spacing: 0.2px;
   font-size: 20px;
 }
@@ -73,9 +77,9 @@ a {
 .landingText {
   font-family: "Kite One", sans-serif;
   font-family: "Tomorrow", sans-serif;
-  width: 259px;
-  margin: 92px auto 0px auto;
-  line-height: 44px;
+  width: 268px;
+  margin: 0px auto 0px auto;
+  line-height: 36px;
 }
 
 .navToggleBtn {
