@@ -1,3 +1,11 @@
+// @mixin flexCenterXY {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+$mobileNav: 88px;
+
 * {
   /* Remove Gray Highlight When Tapping Links in Mobile Safari */
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -12,11 +20,23 @@ a {
   cursor: pointer;
   outline: none;
 }
-// .displayHidden {
-//   display: none !important;
-// }
+.displayHidden {
+  display: none !important;
+}
+.unselectable {
+  user-select: none;
+}
 .opacityZero {
   opacity: 0 !important;
+}
+.openNavLogoBar {
+  top: 0px !important;
+}
+.openNavMenu {
+  bottom: 0vh !important;
+}
+html {
+  background-color: darkgray;
 }
 
 .landing {
@@ -24,114 +44,261 @@ a {
   height: 100vh;
   width: 100%;
   position: fixed;
+  margin-left: -105vw;
 }
-
-.navLogoImg {
+.landingLogoImg {
   display: block;
-  width: 278px;
+  width: 170px;
   margin: 12px auto 12px auto;
 }
 .introBox {
   position: relative;
-  width: 268px;
-  margin: 0 auto 18px auto;
-}
-#lastIntroBox {
-  margin-bottom: 10px;
-}
-.myNameKey {
-  color: orange;
-  display: inline-block;
-  // font-family: "Barlow Condensed", sans-serif;
-  // font-family: "Jura", sans-serif;
-  // font-family: "Chathura", sans-serif;
-  // font-family: "Kite One", sans-serif;
+  width: 280px;
+  margin: 0 auto 10px auto;
   font-family: "Tomorrow", sans-serif;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.5px;
+  word-spacing: 4px;
+  line-height: 36px;
+}
+.period {
+  font-family: "Tomorrow", sans-serif;
 }
 .myNameValue {
-  position: absolute;
-  top: -4px;
-  right: 0;
-  display: inline-block;
   font-family: "Fjalla One", sans-serif;
-  letter-spacing: 0.6px;
   font-size: 20px;
+  margin-left: 3px;
 }
-.jobDescriptionKey {
-  display: inline-block;
-  // font-family: "Barlow Condensed", sans-serif;
-  // font-family: "Jura", sans-serif;
-  // font-family: "Chathura", sans-serif;
-  // font-family: "Kite One", sans-serif;
+.jobTitleKey {
   font-family: "Tomorrow", sans-serif;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.5px;
+  word-spacing: 1.3px;
 }
-.jobDescriptionValue {
-  position: absolute;
-  right: 0;
-  top: -4px;
-  display: inline-block;
-  // font-family: "Barlow Condensed", sans-serif;
+.jobTitleValue {
   font-family: "Fjalla One", sans-serif;
   letter-spacing: 0.2px;
   font-size: 20px;
 }
-.landingText {
-  font-family: "Kite One", sans-serif;
-  font-family: "Tomorrow", sans-serif;
-  width: 268px;
-  margin: 0px auto 0px auto;
-  line-height: 36px;
-}
 
-.navToggleBtn {
+.wordSpace {
+  word-spacing: 2px;
+}
+.landingSocialMedia {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  margin-left: -140px;
+}
+.navLogoBar {
+  background-color: lightgray;
+  width: 100%;
+  height: 88px;
+  position: fixed;
+  top: -88px;
+  transition: top 0.3s;
+  border-bottom: 2px solid silver;
+}
+.navLogoImg {
+  display: block;
+  position: absolute;
+  width: 94px;
+  left: 10px;
+  top: 10px;
+}
+.navMyName {
+  position: absolute;
+  right: 17px;
+  top: 20px;
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 0.6px;
+  font-size: 30px;
+}
+.navJobTitle {
+  position: absolute;
+  right: 18px;
+  top: 52px;
+  font-family: "Fjalla One", sans-serif;
+  font-family: "Tomorrow", sans-serif;
+  letter-spacing: 0.4px;
+  font-size: 18px;
+}
+.navMenu {
+  height: calc(100% - 88px);
+  position: fixed;
+  bottom: -100vh;
+  transition: bottom 0.3s;
+  width: 100%;
+}
+.navMenuOption {
+  background-color: gray;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.6px;
+  text-align: center;
+  height: 33.33%;
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 40px;
-  right: 24px;
+}
+#aboutBox {
+  margin-top: $mobileNav;
+  position: fixed;
+  margin-left: -105vw;
+  width: 100vw;
+  height: 800px;
+  background-color: purple;
+  transition: margin-left 0.3s;
+  overflow: scroll;
+}
+.openBox {
+  margin-left: 0vw !important;
+}
+#portfolioBox {
+  margin-top: $mobileNav;
+  position: fixed;
+  margin-left: -105vw;
+  width: 100vw;
+  height: 800px;
+  background-color: orange;
+  transition: margin-left 0.3s;
+  overflow: scroll;
+}
+#contactBox {
+  margin-top: $mobileNav;
+  position: fixed;
+  margin-left: -105vw;
+  width: 100vw;
+  height: 800px;
+  background-color: silver;
+  transition: margin-left 0.3s;
+  overflow: scroll;
+}
+
+.formOption {
+  margin-bottom: 26px;
+  padding: 0px 20px;
+}
+
+// BUTTONS
+.navToggleBtn {
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 30px;
+  right: 18px;
   /* color: rgba(255, 255, 255, 0.8); */
   position: fixed;
   border-radius: 50%;
-  height: 60px;
-  width: 60px;
+  height: 58px;
+  width: 58px;
   border: none;
   background-color: rgba(51, 51, 51, 0.4);
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
-
-.backToTopBtn {
-  bottom: 14%;
-  right: 24px;
-  /* color: rgba(255, 255, 255, 0.8); */
-  position: fixed;
-  border-radius: 50%;
-  height: 40px;
-  width: 40px;
+.socialMediaBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: silver;
+  width: 52px;
+  height: 52px;
+  // border-radius: 8px;
   border: none;
-  background-color: rgba(51, 51, 51, 0.4);
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  font-size: 30px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+#hireMeBtn {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  // padding: 0 3px;
+  letter-spacing: 0.6px;
+  border-radius: 0px 10px 10px 0px;
+}
+#firstSocialMediaBtn {
+  border-radius: 10px 0px 0px 10px;
+}
+.socialMediaBtn:active {
+  background-color: gainsboro;
 }
 
-.navWindow {
-  background-color: pink;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  // display: none;
-}
-.navGrid {
-  // display: grid;
-  // grid-template-columns: repeat(1, 1fr);
-  // grid-template-rows: repeat(3, 1fr);
-}
-// .navGridOption {
-//   font-family: "Fjalla One", sans-serif;
-//   font-size: 28px;
-//   text-align: center;
-//   height: 33.33vh;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
+// .backToTopBtn {
+//   bottom: 14%;
+//   right: 24px;
+//   /* color: rgba(255, 255, 255, 0.8); */
+//   position: fixed;
+//   border-radius: 50%;
+//   height: 40px;
+//   width: 40px;
+//   border: none;
+//   background-color: rgba(51, 51, 51, 0.4);
+//   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 // }
+
+.typeWriter > * {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid transparent; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  width: 0;
+}
+.introBox {
+  @function strip-units($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  $speed: 0.8s;
+  $delay: 1s;
+  // & means .introBox that is type of .typeWriter
+  &.typeWriter > *:nth-child(1) {
+    animation: typing $speed steps(30, end) 0s 1 forwards,
+      blink-caret 0.5s step-end (strip-units($speed) / 0.5);
+  }
+  &.typeWriter > *:nth-child(2) {
+    // NAME-duration-TIMING FUNCTION-delay-ITERATION COUNT-direction-FILL MODE-play state (not using playstate)
+    animation: typing $speed steps(30, end) $speed 1 forwards,
+      blink-caret 0.5s step-end ($speed * 1)
+        ((strip-units($speed) + strip-units($delay)) / 0.5);
+  }
+  &.typeWriter > *:nth-child(3) {
+    animation: typing $speed steps(30, end) ($speed * 2 + $delay) 1 forwards,
+      blink-caret 0.5s step-end ($speed * 2 + $delay)
+        (strip-units($speed) / 0.5);
+  }
+  &.typeWriter > *:nth-child(4) {
+    animation: typing $speed steps(30, end) ($speed * 3 + $delay) 1 forwards,
+      blink-caret 0.5s step-end ($speed * 3 + $delay)
+        (strip-units($speed) / 0.5);
+  }
+  &.typeWriter > *:nth-child(5) {
+    animation: typing $speed steps(30, end) ($speed * 4 + $delay) 1 forwards,
+      blink-caret 0.5s step-end ($speed * 4 + $delay)
+        (strip-units($speed) / 0.5);
+  }
+  &.typeWriter > *:nth-child(6) {
+    animation: typing $speed steps(30, end) ($speed * 5 + $delay) 1 forwards,
+      blink-caret 0.5s step-end ($speed * 5 + $delay) infinite;
+  }
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}

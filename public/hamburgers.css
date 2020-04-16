@@ -46,7 +46,7 @@
 .hamburger-inner::before,
 .hamburger-inner::after {
   width: 26px;
-  height: 4px;
+  height: 3px;
   background-color: gainsboro;
   border-radius: 4px;
   position: absolute;
@@ -60,10 +60,10 @@
   display: block;
 }
 .hamburger-inner::before {
-  top: -9px;
+  top: -8px;
 }
 .hamburger-inner::after {
-  bottom: -9px;
+  bottom: -8px;
 }
 /* Squeeze */
 .hamburger--squeeze .hamburger-inner {
