@@ -4,7 +4,11 @@
 //   align-items: center;
 // }
 
-$mobileNav: 88px;
+$mobileNav: 80px;
+$startDelay: 1s;
+$scaleInDuration: 1s;
+$slideUpDuration: 1s;
+$textDelay: $scaleInDuration + $slideUpDuration + $startDelay - 1s;
 
 * {
   /* Remove Gray Highlight When Tapping Links in Mobile Safari */
@@ -48,17 +52,18 @@ html {
 }
 .landingLogoImg {
   display: block;
-  width: 170px;
+  width: 160px;
   margin: 12px auto 12px auto;
 }
 .introBox {
   position: relative;
   width: 280px;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 14px auto;
   font-family: "Tomorrow", sans-serif;
   letter-spacing: 0.5px;
   word-spacing: 4px;
-  line-height: 36px;
+  // line-height: 36px;
+  line-height: 26px;
 }
 .period {
   font-family: "Tomorrow", sans-serif;
@@ -88,27 +93,28 @@ html {
   position: absolute;
   left: 50%;
   margin-left: -140px;
+  bottom: 30px;
 }
 .navLogoBar {
   background-color: lightgray;
   width: 100%;
-  height: 88px;
+  height: $mobileNav;
   position: fixed;
-  top: -88px;
+  top: -$mobileNav;
   transition: top 0.3s;
   border-bottom: 2px solid silver;
 }
 .navLogoImg {
   display: block;
   position: absolute;
-  width: 94px;
-  left: 10px;
+  width: 84px;
+  left: 12px;
   top: 10px;
 }
 .navMyName {
   position: absolute;
   right: 17px;
-  top: 20px;
+  top: 16px;
   font-family: "Fjalla One", sans-serif;
   letter-spacing: 0.6px;
   font-size: 30px;
@@ -116,14 +122,14 @@ html {
 .navJobTitle {
   position: absolute;
   right: 18px;
-  top: 52px;
+  top: 48px;
   font-family: "Fjalla One", sans-serif;
   font-family: "Tomorrow", sans-serif;
   letter-spacing: 0.4px;
   font-size: 18px;
 }
 .navMenu {
-  height: calc(100% - 88px);
+  height: calc(100% - #{$mobileNav});
   position: fixed;
   bottom: -100vh;
   transition: bottom 0.3s;
@@ -140,6 +146,9 @@ html {
   justify-content: center;
   align-items: center;
 }
+.openBox {
+  margin-left: 0vw !important;
+}
 #aboutBox {
   margin-top: $mobileNav;
   position: fixed;
@@ -149,9 +158,6 @@ html {
   background-color: purple;
   transition: margin-left 0.3s;
   overflow: scroll;
-}
-.openBox {
-  margin-left: 0vw !important;
 }
 #portfolioBox {
   margin-top: $mobileNav;
@@ -163,20 +169,60 @@ html {
   transition: margin-left 0.3s;
   overflow: scroll;
 }
+
+// CONTACT FORM
 #contactBox {
   margin-top: $mobileNav;
   position: fixed;
   margin-left: -105vw;
   width: 100vw;
-  height: 800px;
+  height: calc(100vh - #{$mobileNav});
   background-color: silver;
   transition: margin-left 0.3s;
   overflow: scroll;
 }
-
 .formOption {
   margin-bottom: 26px;
   padding: 0px 20px;
+}
+.formTitle {
+  text-align: center;
+  margin: 40px 0;
+}
+.contactFormText {
+  margin-bottom: 6px;
+  display: block;
+  letter-spacing: 0.6px;
+  // color: lightgray;
+}
+.fullNameField,
+.emailField {
+  width: 100%;
+  position: relative;
+}
+.contactFormInput {
+  background-color: gainsboro;
+  height: 54px;
+  border: none;
+  padding-left: 11px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  padding-right: 40px;
+  padding-top: 2px;
+  color: lightgray;
+}
+.formAsterik {
+  color: #d12323;
+  margin-left: 4px;
+}
+.formIcon {
+  position: absolute;
+  right: 15px;
+  top: 17px;
+  font-size: 22px;
+  color: #585858;
 }
 
 // BUTTONS
@@ -202,7 +248,7 @@ html {
   align-items: center;
   background-color: silver;
   width: 52px;
-  height: 52px;
+  height: 54px;
   // border-radius: 8px;
   border: none;
   font-size: 30px;
@@ -243,42 +289,44 @@ html {
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   width: 0;
+  margin-bottom: 12px;
 }
 .introBox {
   @function strip-units($number) {
     @return $number / ($number * 0 + 1);
   }
+  // $speed: 0.6s;
+  // $delay: 1s;
   $speed: 0.8s;
-  $delay: 1s;
   // & means .introBox that is type of .typeWriter
   &.typeWriter > *:nth-child(1) {
-    animation: typing $speed steps(30, end) 0s 1 forwards,
-      blink-caret 0.5s step-end (strip-units($speed) / 0.5);
+    animation: typing $speed steps(30, end) $textDelay 1 forwards,
+      blink-caret 0.5s step-end $textDelay (strip-units($speed) / 0.5);
   }
   &.typeWriter > *:nth-child(2) {
     // NAME-duration-TIMING FUNCTION-delay-ITERATION COUNT-direction-FILL MODE-play state (not using playstate)
-    animation: typing $speed steps(30, end) $speed 1 forwards,
-      blink-caret 0.5s step-end ($speed * 1)
-        ((strip-units($speed) + strip-units($delay)) / 0.5);
+    animation: typing $speed steps(30, end) ($speed * 1 + $textDelay) 1 forwards,
+      blink-caret 0.5s step-end ($speed * 1 + $textDelay)
+        ((strip-units($speed)) / 0.5);
   }
   &.typeWriter > *:nth-child(3) {
-    animation: typing $speed steps(30, end) ($speed * 2 + $delay) 1 forwards,
-      blink-caret 0.5s step-end ($speed * 2 + $delay)
+    animation: typing $speed steps(30, end) ($speed * 2 + $textDelay) 1 forwards,
+      blink-caret 0.5s step-end ($speed * 2 + $textDelay)
         (strip-units($speed) / 0.5);
   }
   &.typeWriter > *:nth-child(4) {
-    animation: typing $speed steps(30, end) ($speed * 3 + $delay) 1 forwards,
-      blink-caret 0.5s step-end ($speed * 3 + $delay)
+    animation: typing $speed steps(30, end) ($speed * 3 + $textDelay) 1 forwards,
+      blink-caret 0.5s step-end ($speed * 3 + $textDelay)
         (strip-units($speed) / 0.5);
   }
   &.typeWriter > *:nth-child(5) {
-    animation: typing $speed steps(30, end) ($speed * 4 + $delay) 1 forwards,
-      blink-caret 0.5s step-end ($speed * 4 + $delay)
+    animation: typing $speed steps(30, end) ($speed * 4 + $textDelay) 1 forwards,
+      blink-caret 0.5s step-end ($speed * 4 + $textDelay)
         (strip-units($speed) / 0.5);
   }
   &.typeWriter > *:nth-child(6) {
-    animation: typing $speed steps(30, end) ($speed * 5 + $delay) 1 forwards,
-      blink-caret 0.5s step-end ($speed * 5 + $delay) infinite;
+    animation: typing $speed steps(30, end) ($speed * 5 + $textDelay) 1 forwards,
+      blink-caret 0.5s step-end ($speed * 5 + $textDelay) infinite;
   }
 }
 
@@ -302,3 +350,53 @@ html {
     border-color: orange;
   }
 }
+
+.logoAnimation {
+  animation: scaleIn $scaleInDuration ease (0s + $startDelay) 1 normal forwards,
+    slideUp $slideUpDuration ease ($scaleInDuration + $startDelay) 1 normal
+      forwards;
+  margin-top: 50vh;
+  transform: translateY(-50%) scale(0);
+}
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 1s ease $textDelay 1 normal forwards;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    transform: translateY(-50%) scale(0);
+  }
+  55% {
+    transform: translateY(-50%) scale(1.1);
+  }
+  65% {
+    transform: translateY(-50%) scale(1);
+  }
+  100% {
+    transform: translateY(-50%) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    margin-top: 50vh;
+    transform: translateY(-50%);
+  }
+  100% {
+    margin-top: 12px;
+    transform: translateY(0);
+  }
+}
+
+// $mobileNav: 80px;
+// $startDelay: 0.5s;
+// $textDelay: 2s;
+// $scaleInDuration: 1s;
+// $slideUpDuration: 1s;

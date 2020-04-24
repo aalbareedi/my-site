@@ -52,18 +52,18 @@ html {
 
 .landingLogoImg {
   display: block;
-  width: 170px;
+  width: 160px;
   margin: 12px auto 12px auto;
 }
 
 .introBox {
   position: relative;
   width: 280px;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 14px auto;
   font-family: "Tomorrow", sans-serif;
   letter-spacing: 0.5px;
   word-spacing: 4px;
-  line-height: 36px;
+  line-height: 26px;
 }
 
 .period {
@@ -102,14 +102,15 @@ html {
   position: absolute;
   left: 50%;
   margin-left: -140px;
+  bottom: 30px;
 }
 
 .navLogoBar {
   background-color: lightgray;
   width: 100%;
-  height: 88px;
+  height: 80px;
   position: fixed;
-  top: -88px;
+  top: -80px;
   -webkit-transition: top 0.3s;
   transition: top 0.3s;
   border-bottom: 2px solid silver;
@@ -118,15 +119,15 @@ html {
 .navLogoImg {
   display: block;
   position: absolute;
-  width: 94px;
-  left: 10px;
+  width: 84px;
+  left: 12px;
   top: 10px;
 }
 
 .navMyName {
   position: absolute;
   right: 17px;
-  top: 20px;
+  top: 16px;
   font-family: "Fjalla One", sans-serif;
   letter-spacing: 0.6px;
   font-size: 30px;
@@ -135,7 +136,7 @@ html {
 .navJobTitle {
   position: absolute;
   right: 18px;
-  top: 52px;
+  top: 48px;
   font-family: "Fjalla One", sans-serif;
   font-family: "Tomorrow", sans-serif;
   letter-spacing: 0.4px;
@@ -143,7 +144,7 @@ html {
 }
 
 .navMenu {
-  height: calc(100% - 88px);
+  height: calc(100% - 80px);
   position: fixed;
   bottom: -100vh;
   -webkit-transition: bottom 0.3s;
@@ -169,8 +170,12 @@ html {
           align-items: center;
 }
 
+.openBox {
+  margin-left: 0vw !important;
+}
+
 #aboutBox {
-  margin-top: 88px;
+  margin-top: 80px;
   position: fixed;
   margin-left: -105vw;
   width: 100vw;
@@ -181,12 +186,8 @@ html {
   overflow: scroll;
 }
 
-.openBox {
-  margin-left: 0vw !important;
-}
-
 #portfolioBox {
-  margin-top: 88px;
+  margin-top: 80px;
   position: fixed;
   margin-left: -105vw;
   width: 100vw;
@@ -198,11 +199,11 @@ html {
 }
 
 #contactBox {
-  margin-top: 88px;
+  margin-top: 80px;
   position: fixed;
   margin-left: -105vw;
   width: 100vw;
-  height: 800px;
+  height: calc(100vh - 80px);
   background-color: silver;
   -webkit-transition: margin-left 0.3s;
   transition: margin-left 0.3s;
@@ -212,6 +213,50 @@ html {
 .formOption {
   margin-bottom: 26px;
   padding: 0px 20px;
+}
+
+.formTitle {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.contactFormText {
+  margin-bottom: 6px;
+  display: block;
+  letter-spacing: 0.6px;
+}
+
+.fullNameField,
+.emailField {
+  width: 100%;
+  position: relative;
+}
+
+.contactFormInput {
+  background-color: gainsboro;
+  height: 54px;
+  border: none;
+  padding-left: 11px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  padding-right: 40px;
+  padding-top: 2px;
+  color: lightgray;
+}
+
+.formAsterik {
+  color: #d12323;
+  margin-left: 4px;
+}
+
+.formIcon {
+  position: absolute;
+  right: 15px;
+  top: 17px;
+  font-size: 22px;
+  color: #585858;
 }
 
 .navToggleBtn {
@@ -250,7 +295,7 @@ html {
           align-items: center;
   background-color: silver;
   width: 52px;
-  height: 52px;
+  height: 54px;
   border: none;
   font-size: 30px;
   color: whitesmoke;
@@ -283,36 +328,37 @@ html {
   margin: 0 auto;
   /* Gives that scrolling effect as the typing happens */
   width: 0;
+  margin-bottom: 12px;
 }
 
 .introBox.typeWriter > *:nth-child(1) {
-  -webkit-animation: typing 0.8s steps(30, end) 0s 1 forwards, blink-caret 0.5s step-end 1.6;
-          animation: typing 0.8s steps(30, end) 0s 1 forwards, blink-caret 0.5s step-end 1.6;
+  -webkit-animation: typing 0.8s steps(30, end) 2s 1 forwards, blink-caret 0.5s step-end 2s 1.6;
+          animation: typing 0.8s steps(30, end) 2s 1 forwards, blink-caret 0.5s step-end 2s 1.6;
 }
 
 .introBox.typeWriter > *:nth-child(2) {
-  -webkit-animation: typing 0.8s steps(30, end) 0.8s 1 forwards, blink-caret 0.5s step-end 0.8s 3.6;
-          animation: typing 0.8s steps(30, end) 0.8s 1 forwards, blink-caret 0.5s step-end 0.8s 3.6;
+  -webkit-animation: typing 0.8s steps(30, end) 2.8s 1 forwards, blink-caret 0.5s step-end 2.8s 1.6;
+          animation: typing 0.8s steps(30, end) 2.8s 1 forwards, blink-caret 0.5s step-end 2.8s 1.6;
 }
 
 .introBox.typeWriter > *:nth-child(3) {
-  -webkit-animation: typing 0.8s steps(30, end) 2.6s 1 forwards, blink-caret 0.5s step-end 2.6s 1.6;
-          animation: typing 0.8s steps(30, end) 2.6s 1 forwards, blink-caret 0.5s step-end 2.6s 1.6;
+  -webkit-animation: typing 0.8s steps(30, end) 3.6s 1 forwards, blink-caret 0.5s step-end 3.6s 1.6;
+          animation: typing 0.8s steps(30, end) 3.6s 1 forwards, blink-caret 0.5s step-end 3.6s 1.6;
 }
 
 .introBox.typeWriter > *:nth-child(4) {
-  -webkit-animation: typing 0.8s steps(30, end) 3.4s 1 forwards, blink-caret 0.5s step-end 3.4s 1.6;
-          animation: typing 0.8s steps(30, end) 3.4s 1 forwards, blink-caret 0.5s step-end 3.4s 1.6;
+  -webkit-animation: typing 0.8s steps(30, end) 4.4s 1 forwards, blink-caret 0.5s step-end 4.4s 1.6;
+          animation: typing 0.8s steps(30, end) 4.4s 1 forwards, blink-caret 0.5s step-end 4.4s 1.6;
 }
 
 .introBox.typeWriter > *:nth-child(5) {
-  -webkit-animation: typing 0.8s steps(30, end) 4.2s 1 forwards, blink-caret 0.5s step-end 4.2s 1.6;
-          animation: typing 0.8s steps(30, end) 4.2s 1 forwards, blink-caret 0.5s step-end 4.2s 1.6;
+  -webkit-animation: typing 0.8s steps(30, end) 5.2s 1 forwards, blink-caret 0.5s step-end 5.2s 1.6;
+          animation: typing 0.8s steps(30, end) 5.2s 1 forwards, blink-caret 0.5s step-end 5.2s 1.6;
 }
 
 .introBox.typeWriter > *:nth-child(6) {
-  -webkit-animation: typing 0.8s steps(30, end) 5s 1 forwards, blink-caret 0.5s step-end 5s infinite;
-          animation: typing 0.8s steps(30, end) 5s 1 forwards, blink-caret 0.5s step-end 5s infinite;
+  -webkit-animation: typing 0.8s steps(30, end) 6s 1 forwards, blink-caret 0.5s step-end 6s infinite;
+          animation: typing 0.8s steps(30, end) 6s 1 forwards, blink-caret 0.5s step-end 6s infinite;
 }
 
 /* The typing effect */
@@ -350,6 +396,96 @@ html {
   }
   50% {
     border-color: orange;
+  }
+}
+
+.logoAnimation {
+  -webkit-animation: scaleIn 1s ease 1s 1 normal forwards, slideUp 1s ease 2s 1 normal forwards;
+          animation: scaleIn 1s ease 1s 1 normal forwards, slideUp 1s ease 2s 1 normal forwards;
+  margin-top: 50vh;
+  -webkit-transform: translateY(-50%) scale(0);
+          transform: translateY(-50%) scale(0);
+}
+
+.fadeIn {
+  opacity: 0;
+  -webkit-animation: fadeIn 1s ease 2s 1 normal forwards;
+          animation: fadeIn 1s ease 2s 1 normal forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes scaleIn {
+  0% {
+    -webkit-transform: translateY(-50%) scale(0);
+            transform: translateY(-50%) scale(0);
+  }
+  55% {
+    -webkit-transform: translateY(-50%) scale(1.1);
+            transform: translateY(-50%) scale(1.1);
+  }
+  65% {
+    -webkit-transform: translateY(-50%) scale(1);
+            transform: translateY(-50%) scale(1);
+  }
+  100% {
+    -webkit-transform: translateY(-50%) scale(1);
+            transform: translateY(-50%) scale(1);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    -webkit-transform: translateY(-50%) scale(0);
+            transform: translateY(-50%) scale(0);
+  }
+  55% {
+    -webkit-transform: translateY(-50%) scale(1.1);
+            transform: translateY(-50%) scale(1.1);
+  }
+  65% {
+    -webkit-transform: translateY(-50%) scale(1);
+            transform: translateY(-50%) scale(1);
+  }
+  100% {
+    -webkit-transform: translateY(-50%) scale(1);
+            transform: translateY(-50%) scale(1);
+  }
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    margin-top: 50vh;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    margin-top: 12px;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    margin-top: 50vh;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    margin-top: 12px;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 /*# sourceMappingURL=style.css.map */
