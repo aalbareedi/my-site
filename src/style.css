@@ -1,0 +1,1048 @@
+* {
+  /* Remove Gray Highlight When Tapping Links in Mobile Safari */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-appearance: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button,
+a {
+  cursor: pointer;
+  outline: none;
+}
+
+.displayHidden {
+  display: none !important;
+}
+
+.unselectable {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.opacityZero {
+  opacity: 0 !important;
+}
+
+.openNavLogoBar {
+  top: 0px !important;
+}
+
+img {
+  pointer-events: none;
+}
+
+html {
+  background-color: darkgray;
+}
+
+#wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-gradient(linear, right bottom, left top, from(#845bff), to(#ff903b));
+  background: linear-gradient(to top left, #845bff 0%, #ff903b 100%);
+}
+
+.landing {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  margin-left: -105vw;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.landingLogoImg {
+  display: block;
+  width: 130px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 24px;
+}
+
+.introBox {
+  position: relative;
+  width: 282px;
+  margin: 0 auto 22px auto;
+  font-family: "Tomorrow", sans-serif;
+  font-family: "Saira", sans-serif;
+  font-family: "Hind Madurai", sans-serif;
+  font-family: "Baloo Da 2", cursive;
+  letter-spacing: 0.5px;
+  word-spacing: 4px;
+  line-height: 26px;
+}
+
+.period {
+  font-family: "Tomorrow", sans-serif;
+}
+
+.myNameValue {
+  font-family: "Fjalla One", sans-serif;
+  font-family: "Magra", sans-serif;
+  font-family: "PT Sans", sans-serif;
+  font-family: "Cabin", sans-serif;
+  font-size: 17px;
+  margin-left: 2px;
+  letter-spacing: 0.3px;
+}
+
+.jobTitleKey {
+  font-family: "Tomorrow", sans-serif;
+  letter-spacing: 0.5px;
+  word-spacing: 1.3px;
+}
+
+.jobTitleValue {
+  font-family: "Fjalla One", sans-serif;
+  font-family: "Magra", sans-serif;
+  font-family: "PT Sans", sans-serif;
+  font-family: "Cabin", sans-serif;
+  letter-spacing: 0.3px;
+  margin-left: 2px;
+}
+
+.navLogoBar {
+  background-color: rgba(207, 207, 207, 0);
+  width: 100%;
+  height: 66px;
+  position: fixed;
+  top: -66px;
+  -webkit-transition: top 0.3s, background-color 0.2s;
+  transition: top 0.3s, background-color 0.2s;
+}
+
+.fadeBgColor {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.navLogoImg {
+  position: absolute;
+  width: 64px;
+  left: 11px;
+  top: 10px;
+}
+
+.navMyName {
+  position: absolute;
+  right: 13px;
+  top: 12px;
+  font-family: "Fjalla One", sans-serif;
+  font-family: "Magra", sans-serif;
+  font-family: "PT Sans", sans-serif;
+  font-family: "Cabin", sans-serif;
+  font-size: 26px;
+}
+
+.navJobTitle {
+  position: absolute;
+  right: 14px;
+  top: 40px;
+  font-family: "Fjalla One", sans-serif;
+  font-family: "Tomorrow", sans-serif;
+  font-family: "Hind Madurai", sans-serif;
+  font-family: "Baloo Da 2", cursive;
+  letter-spacing: 0.2px;
+  word-spacing: 1.4px;
+  font-size: 15px;
+}
+
+.navMenu {
+  height: calc(100% - 66px);
+  position: fixed;
+  bottom: -100vh;
+  -webkit-transition: bottom 0.3s;
+  transition: bottom 0.3s;
+  width: 100%;
+  padding: 0px 10px 0px 10px;
+}
+
+.openNavMenu {
+  bottom: 0vh !important;
+}
+
+.openNavMenu .navMenuOption {
+  margin-top: 0px;
+}
+
+.navMenuOption {
+  border-radius: 8px;
+  background-color: rgba(207, 207, 207, 0.4);
+  font-family: "Fjalla One", sans-serif;
+  font-family: "Magra", sans-serif;
+  font-family: "PT Sans", sans-serif;
+  font-family: "Cabin", sans-serif;
+  font-size: 26px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  height: calc(33.3% - 10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.navMenuOption:nth-child(1) {
+  -webkit-transition: margin-top 0.4s ease-in;
+  transition: margin-top 0.4s ease-in;
+  margin-bottom: 10px;
+}
+
+.navMenuOption:nth-child(2) {
+  -webkit-transition: margin-top 0.4s ease-in 0.2s;
+  transition: margin-top 0.4s ease-in 0.2s;
+  margin-bottom: 10px;
+}
+
+.navMenuOption:nth-child(3) {
+  -webkit-transition: margin-top 0.4s ease-in 0.3s;
+  transition: margin-top 0.4s ease-in 0.3s;
+}
+
+.openBox {
+  margin-left: 0vw !important;
+  opacity: 1;
+}
+
+#contactBox {
+  margin-top: 66px;
+  position: fixed;
+  margin-left: -105vw;
+  width: 100vw;
+  height: calc(100vh - 66px);
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-transition: margin-left 0.3s;
+  transition: margin-left 0.3s;
+  overflow: scroll;
+}
+
+.formOption {
+  margin-bottom: 28px;
+  padding: 0px 20px;
+}
+
+.formTitle {
+  text-align: center;
+  margin: 40px 0 40px 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 22px;
+  letter-spacing: 0.4px;
+  color: #c4c4c4;
+}
+
+.contactFormText {
+  font-family: "Manrope", sans-serif;
+  margin-bottom: 8px;
+  display: block;
+  letter-spacing: 0.6px;
+  color: #c4c4c4;
+}
+
+.fullNameField,
+.emailField {
+  width: 100%;
+  position: relative;
+}
+
+.contactFormInput {
+  font-family: "Manrope", sans-serif;
+  background-color: initial;
+  border: 2px solid rgba(220, 220, 220, 0.5);
+  height: 58px;
+  padding-left: 11px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  letter-spacing: 0.7px;
+  padding-right: 40px;
+  padding-top: 2px;
+  border-radius: 10px;
+}
+
+.contactFormInput::-webkit-input-placeholder {
+  color: gainsboro;
+}
+
+.contactFormInput:-ms-input-placeholder {
+  color: gainsboro;
+}
+
+.contactFormInput::-ms-input-placeholder {
+  color: gainsboro;
+}
+
+.contactFormInput::placeholder {
+  color: gainsboro;
+}
+
+.formAsterik {
+  color: #e94e4e;
+  margin-left: 2px;
+}
+
+.formIcon {
+  position: absolute;
+  right: 15px;
+  top: 18px;
+  font-size: 22px;
+  color: rgba(220, 220, 220, 0.6);
+}
+
+.formMessage {
+  padding: 0px 20px 140px 20px;
+}
+
+#messageInput {
+  padding: 8px 8px 0 8px;
+  height: 170px;
+}
+
+#messageInput:focus {
+  border: 2px solid #067ffc;
+  outline: none;
+}
+
+.contactFormInput:focus {
+  border: 2px solid #067ffc;
+  outline: none;
+}
+
+input.contactFormInput:valid {
+  background-image: url("newcheck.svg");
+  background-size: 26px;
+  background-repeat: no-repeat;
+  background-position: right 11px center;
+}
+
+input.contactFormInput:valid + .formIcon {
+  opacity: 0;
+}
+
+.eyeIcon {
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  font-size: 28px;
+}
+
+.eyeImg {
+  width: 36px;
+}
+
+#aboutBox {
+  font-family: "Manrope", sans-serif;
+  margin-top: 66px;
+  position: fixed;
+  margin-left: -105vw;
+  width: 100vw;
+  height: calc(100% - 66px);
+  -webkit-transition: margin-left 0.3s;
+  transition: margin-left 0.3s;
+  overflow: scroll;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.faceImg {
+  margin: 0 auto 50px auto;
+  width: 140px;
+  display: block;
+  z-index: 2;
+  position: relative;
+}
+
+.ImgEffectL {
+  width: 200px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: -40px;
+}
+
+.ImgEffectR {
+  width: 200px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: -40px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.aboutIntroText {
+  font-family: "Tomorrow", sans-serif;
+  font-family: "Hind Madurai", sans-serif;
+  font-family: "Baloo Da 2", cursive;
+  margin: 0 11px 34px 20px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  word-spacing: 1px;
+}
+
+.responsiveWeb {
+  position: relative;
+  margin: 0 auto;
+  width: 280px;
+  height: 634px;
+}
+
+.responWebImg {
+  position: absolute;
+}
+
+.webMobileImg {
+  top: 26px;
+  left: 33px;
+  width: 60px;
+}
+
+.webTabletImg {
+  top: 0px;
+  right: 30px;
+  width: 118px;
+}
+
+.webLaptopImg {
+  top: 190px;
+  width: 240px;
+  left: 20px;
+}
+
+.webDesktopImg {
+  top: 386px;
+  width: 270px;
+  left: 2px;
+}
+
+.stroke {
+  width: 40px;
+}
+
+.strokeImg1 {
+  top: 70px;
+  left: 93px;
+}
+
+.strokeImg2 {
+  top: 163px;
+  left: 169px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.strokeImg3 {
+  top: 359px;
+  left: 120px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.homeNavBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* color: rgba(255, 255, 255, 0.8); */
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border-radius: 0px 20px 20px 0px;
+  height: 60px;
+  width: 60px;
+  border: none;
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+.navToggleBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  width: 60px;
+  background-color: rgba(51, 51, 51, 0.5);
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.navToggleBtn:active {
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+.landingSocialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  margin-left: -140px;
+  top: 372px;
+}
+
+.hireMeBtn {
+  font-family: "Tomorrow", sans-serif;
+  font-family: "Magra", sans-serif;
+  font-family: "PT Sans", sans-serif;
+  font-family: "Cabin", sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(51, 51, 51, 0.5);
+  height: 60px;
+  border: none;
+  color: whitesmoke;
+  text-decoration: none;
+  margin: 0px 20px;
+  position: relative;
+  padding-right: 10px;
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+}
+
+.socialMediaBtn:first-child {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.socialMediaBtn:active {
+  background-color: gainsboro;
+}
+
+.goToPortfolioBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  width: 200px;
+  margin-left: 22px;
+  background-color: rgba(51, 51, 51, 0.5);
+  letter-spacing: 0.6px;
+  border-radius: 10px;
+}
+
+.aboutWebSkill {
+  height: 70px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 0px 20px 20px 20px;
+  position: relative;
+  padding-top: 22px;
+  -webkit-transition: height 0.4s;
+  transition: height 0.4s;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.newHtmlIcon {
+  width: 46px;
+  display: block;
+  position: absolute;
+  top: 11px;
+  left: 14px;
+}
+
+.newIconTitle {
+  font-family: "Teko", sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #ffebd5;
+}
+
+.newIconOpenBtn {
+  width: 52px;
+  height: 46px;
+  border-radius: 16px 0px 0px 16px;
+  background-color: rgba(231, 232, 234, 0.3);
+  position: absolute;
+  right: 0px;
+  top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutWebSkill.openIconBox {
+  height: 260px;
+}
+
+.iconDropdown {
+  border-radius: 0px 0px 12px 12px;
+  padding-top: 24px;
+  background: rgba(255, 216, 216, 0.5);
+  height: calc(100% - 72px);
+  width: 100%;
+  position: absolute;
+  top: 72px;
+  opacity: 0;
+  -webkit-transition: opacity 1.5s;
+  transition: opacity 1.5s;
+}
+
+.openIconBox .iconDropdown {
+  opacity: 1;
+}
+
+.arrowDown {
+  font-size: 30px;
+  margin-top: 1px;
+  margin-left: 3px;
+  color: #ffebd5;
+  -webkit-transition: margin-top 0.2s, -webkit-transform 0.2s;
+  transition: margin-top 0.2s, -webkit-transform 0.2s;
+  transition: transform 0.2s, margin-top 0.2s;
+  transition: transform 0.2s, margin-top 0.2s, -webkit-transform 0.2s;
+}
+
+.openIconBox .arrowDown {
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+  margin-top: 0px;
+}
+
+.aboutIconTextWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 14px;
+  margin-left: 30px;
+  opacity: 0;
+}
+
+.aboutIconBullet {
+  margin-left: 12px;
+  font-size: 20px;
+  line-height: 18px;
+}
+
+.aboutIconText {
+  padding-left: 5px;
+  padding-right: 13px;
+  line-height: 22px;
+  word-spacing: 1.8px;
+  font-family: "Baloo Da 2", cursive;
+}
+
+.openIconBox .aboutIconTextWrapper:nth-child(1) {
+  margin-left: 0px;
+  opacity: 1;
+  -webkit-transition: margin-left 0.7s, opacity 0.5s;
+  transition: margin-left 0.7s, opacity 0.5s;
+}
+
+.openIconBox .aboutIconTextWrapper:nth-child(2) {
+  margin-left: 0px;
+  opacity: 1;
+  -webkit-transition: margin-left 0.7s 0.15s, opacity 0.5s 0.15s;
+  transition: margin-left 0.7s 0.15s, opacity 0.5s 0.15s;
+}
+
+.extraBox {
+  height: 300px;
+}
+
+#portfolioBox {
+  margin-top: 66px;
+  position: fixed;
+  margin-left: -105vw;
+  width: 100vw;
+  height: calc(100% - 66px);
+  -webkit-transition: margin-left 0.3s;
+  transition: margin-left 0.3s;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.portfolioTitle {
+  margin-bottom: 14px;
+  padding-left: 20px;
+  font-size: 20px;
+  font-family: "Baloo Da 2", cursive;
+}
+
+.orthoProjectText {
+  font-family: "Baloo Da 2", cursive;
+  margin: 30px 10px 30px 20px;
+  line-height: 24px;
+}
+
+.openProjectBox .orthoProjectContent {
+  margin-bottom: 0px;
+  opacity: 1;
+  -webkit-transition: margin-bottom 1s, opacity 2s;
+  transition: margin-bottom 1s, opacity 2s;
+}
+
+.project1Box {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0px 20px 20px 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 100px;
+}
+
+.orthoProjectContent {
+  margin-bottom: -1530px;
+  opacity: 0;
+  -webkit-transition: margin-bottom 0.6s, opacity 0.4s;
+  transition: margin-bottom 0.6s, opacity 0.4s;
+}
+
+.openProjectBox .projectArrowDown {
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+  margin-top: 0px;
+}
+
+.openProjectBox .orthoProject {
+  border-radius: 0px;
+}
+
+.orthoProject {
+  display: block;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  background-image: url(./smilebg1.png);
+  background-size: 476px;
+  background-repeat: no-repeat;
+  background-position: top -241px right -100px;
+  text-decoration: none;
+  position: relative;
+  -webkit-transition: border-radius 1s;
+  transition: border-radius 1s;
+}
+
+.orthoOverlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 18px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.project1Title {
+  margin-right: 2px;
+  color: #1b1c1e;
+}
+
+.orthoTopTitle {
+  font-size: 21px;
+  letter-spacing: 0.5px;
+  font-family: "Russo One", sans-serif;
+  line-height: 0.9;
+}
+
+.orthoBottomTitle {
+  font-size: 15px;
+  letter-spacing: 0.6px;
+  font-family: "Titillium Web", sans-serif;
+  line-height: 0.9;
+}
+
+.orthoLogo {
+  width: 32px;
+  margin-right: 4px;
+}
+
+.orthoViewBtn {
+  width: 54px;
+  height: 48px;
+  border-radius: 16px 0px 0px 16px;
+  background-color: rgba(79, 79, 79, 0.6);
+  position: absolute;
+  right: 0px;
+  top: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectArrowDown {
+  font-size: 32px;
+  margin-top: 1px;
+  margin-left: 3px;
+  color: #ffffff;
+  -webkit-transition: margin-top 0.2s, -webkit-transform 0.2s;
+  transition: margin-top 0.2s, -webkit-transform 0.2s;
+  transition: transform 0.2s, margin-top 0.2s;
+  transition: transform 0.2s, margin-top 0.2s, -webkit-transform 0.2s;
+}
+
+.beforeImgBox {
+  margin: 0 30px 30px 30px;
+  background-color: rgba(85, 83, 83, 0.4);
+  padding: 16px 0px 0px 0px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.beforeImgText {
+  font-family: "Baloo Da 2", cursive;
+  text-align: center;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.beforeSiteImg {
+  width: 100%;
+  display: block;
+}
+
+.afterImgWrapper {
+  position: relative;
+}
+
+.beforeAfterArrow {
+  position: absolute;
+  top: -240px;
+  font-size: 160px;
+  left: 50%;
+  margin-left: -45px;
+}
+
+.arrowImg {
+  display: block;
+  width: 90px;
+}
+
+.typeWriter > * {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid transparent;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  width: 0;
+  margin-bottom: 10px;
+}
+
+.introBox.typeWriter > *:nth-child(1) {
+  -webkit-animation: typing 0.5s steps(30, end) 1.4s 1 forwards, blink-caret 0.5s step-end 1.4s 1;
+          animation: typing 0.5s steps(30, end) 1.4s 1 forwards, blink-caret 0.5s step-end 1.4s 1;
+}
+
+.introBox.typeWriter > *:nth-child(2) {
+  -webkit-animation: typing 0.5s steps(30, end) 1.9s 1 forwards, blink-caret 0.5s step-end 1.9s 1;
+          animation: typing 0.5s steps(30, end) 1.9s 1 forwards, blink-caret 0.5s step-end 1.9s 1;
+  word-spacing: 1px;
+}
+
+.introBox.typeWriter > *:nth-child(3) {
+  -webkit-animation: typing 0.5s steps(30, end) 2.4s 1 forwards, blink-caret 0.5s step-end 2.4s 1;
+          animation: typing 0.5s steps(30, end) 2.4s 1 forwards, blink-caret 0.5s step-end 2.4s 1;
+}
+
+.introBox.typeWriter > *:nth-child(4) {
+  -webkit-animation: typing 0.5s steps(30, end) 2.9s 1 forwards, blink-caret 0.5s step-end 2.9s 1;
+          animation: typing 0.5s steps(30, end) 2.9s 1 forwards, blink-caret 0.5s step-end 2.9s 1;
+}
+
+.introBox.typeWriter > *:nth-child(5) {
+  -webkit-animation: typing 0.5s steps(30, end) 3.4s 1 forwards, blink-caret 0.5s step-end 3.4s 1;
+          animation: typing 0.5s steps(30, end) 3.4s 1 forwards, blink-caret 0.5s step-end 3.4s 1;
+}
+
+.introBox.typeWriter > *:nth-child(6) {
+  -webkit-animation: typing 0.5s steps(30, end) 3.9s 1 forwards, blink-caret 0.5s step-end 3.9s infinite;
+          animation: typing 0.5s steps(30, end) 3.9s 1 forwards, blink-caret 0.5s step-end 3.9s infinite;
+}
+
+/* The typing effect */
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.logoAnimation {
+  -webkit-animation: scaleIn 1s ease 0.4s 1 normal forwards, slideUp 1s ease 1.4s 1 normal forwards;
+          animation: scaleIn 1s ease 0.4s 1 normal forwards, slideUp 1s ease 1.4s 1 normal forwards;
+  margin-top: calc(50vh - 46px);
+  -webkit-transform: translateY(-50%) scale(0);
+          transform: translateY(-50%) scale(0);
+}
+
+.fadeIn {
+  opacity: 0;
+  -webkit-animation: fadeIn 2s ease 1.4s 1 normal forwards;
+          animation: fadeIn 2s ease 1.4s 1 normal forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes scaleIn {
+  0% {
+    -webkit-transform: translateY(-50%) scale(0);
+            transform: translateY(-50%) scale(0);
+  }
+  55% {
+    -webkit-transform: translateY(-50%) scale(1.1);
+            transform: translateY(-50%) scale(1.1);
+  }
+  65% {
+    -webkit-transform: translateY(-50%) scale(1);
+            transform: translateY(-50%) scale(1);
+  }
+  100% {
+    -webkit-transform: translateY(-50%) scale(1);
+            transform: translateY(-50%) scale(1);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    -webkit-transform: translateY(-50%) scale(0);
+            transform: translateY(-50%) scale(0);
+  }
+  55% {
+    -webkit-transform: translateY(-50%) scale(1.1);
+            transform: translateY(-50%) scale(1.1);
+  }
+  65% {
+    -webkit-transform: translateY(-50%) scale(1);
+            transform: translateY(-50%) scale(1);
+  }
+  100% {
+    -webkit-transform: translateY(-50%) scale(1);
+            transform: translateY(-50%) scale(1);
+  }
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    margin-top: calc(50vh - 46px);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    margin-top: 24px;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    margin-top: calc(50vh - 46px);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  100% {
+    margin-top: 24px;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+/*# sourceMappingURL=style.css.map */
