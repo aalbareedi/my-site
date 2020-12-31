@@ -1,2 +1,1348 @@
 /* iPhone 6/7/8 (safari) */
+@media only screen and (min-width: 375px) {
+  li.alice-carousel__dots-item:not(:last-child) {
+    margin-right: 14px;
+  }
+  .orthoProjectText {
+    margin-right: 13px;
+  }
+  .aboutMeQuote {
+    font-size: 20px;
+  }
+  .responsiveWeb {
+    height: 710px;
+  }
+  .introLine {
+    font-size: 28px;
+  }
+  .myNameValue {
+    font-size: 44px;
+    letter-spacing: 0.4px;
+  }
+  .faceGraphic {
+    margin-top: 36px;
+    width: 148px;
+  }
+  .ImgEffect {
+    height: 212px;
+  }
+  .introDescription {
+    font-size: 20px;
+    line-height: 34px;
+    word-spacing: 4px;
+    width: 334px;
+  }
+  .aboutIntroText {
+    font-size: 18px;
+    line-height: 31px;
+  }
+  .alice-carousel__prev-btn,
+  .alice-carousel__next-btn {
+    font-size: 48px;
+  }
+  .aboutMeCard {
+    width: 276px;
+    height: 320px;
+  }
+  .skillsTitle,
+  .portfolioTitle {
+    font-size: 26px;
+  }
+  .aboutEyeImg {
+    top: 20px;
+    width: 176px;
+  }
+  .webMobileImg {
+    top: 20px;
+    left: 18px;
+    width: 70px;
+  }
+  .webTabletImg {
+    top: -6px;
+    right: 14px;
+    width: 136px;
+  }
+  .stroke {
+    width: 88px;
+  }
+  .strokeImg1 {
+    top: 69px;
+    left: 75px;
+  }
+  .strokeImg2 {
+    top: 192px;
+    left: 152px;
+  }
+  .strokeImg3 {
+    top: 410px;
+    margin-left: -44px;
+  }
+  .webLaptopImg {
+    top: 212px;
+    margin-left: -135px;
+    width: 270px;
+  }
+  .webDesktopImg {
+    top: 430px;
+    width: 290px;
+    margin-left: -145px;
+  }
+  .webText {
+    top: 151px;
+    left: 0px;
+    font-size: 20px;
+    line-height: 24px;
+    word-spacing: 1px;
+  }
+  .icon-arrows span,
+  .icon-arrows::after,
+  .icon-arrows::before {
+    width: 14px;
+    height: 14px;
+  }
+  .webSkillIconText,
+  .designIconText {
+    font-size: 16px;
+  }
+  .aboutLeftQuote {
+    font-size: 42px;
+  }
+  .underline {
+    height: 4px;
+  }
+  li.alice-carousel__dots-item {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+/* iPhone 6/7/8 PLUS - iphone 11 Pro Max */
+@media only screen and (min-width: 414px) {
+  .orthoProjectText {
+    margin-right: 20px;
+  }
+  .intro {
+    margin: 30px 0px 10px 20px;
+  }
+  .ImgEffect {
+    height: 232px;
+  }
+  .faceGraphic {
+    margin-top: 40px;
+    width: 164px;
+  }
+  .introDescription {
+    font-size: 22px;
+    word-spacing: 5px;
+    line-height: 37px;
+    width: 370px;
+  }
+  .introLine {
+    font-size: 32px;
+  }
+  .myNameValue {
+    font-size: 48px;
+  }
+  .icon-arrows span,
+  .icon-arrows::after,
+  .icon-arrows::before {
+    width: 16px;
+    height: 16px;
+  }
+  .aboutMeQuote {
+    font-size: 22px;
+  }
+  .aboutLeftQuote {
+    font-size: 44px;
+  }
+  .webText {
+    left: -30px;
+  }
+  .aboutMeCard {
+    width: 286px;
+  }
+  div.aboutCardText {
+    padding-left: 14px;
+    top: 200px;
+  }
+  .alice-carousel__prev-btn,
+  .alice-carousel__next-btn {
+    font-size: 54px;
+  }
+  .alice-carousel__prev-btn {
+    left: 12px;
+  }
+  .alice-carousel__next-btn {
+    right: 12px;
+  }
+  li.alice-carousel__dots-item {
+    width: 14px;
+    height: 14px;
+    margin: 0 9px;
+  }
+  .beforeAfterImgs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .beforeAfterArrow {
+    top: 10px;
+    left: -122px;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    margin-left: 0px;
+  }
+  .arrowImg {
+    width: 94px;
+  }
+  .orthoProject {
+    background-size: 566px;
+    background-position: top -293px right -70px;
+  }
+  .resultImg {
+    height: calc(100% - 28px);
+  }
+  .beforeAfterImgs > :first-child,
+  .beforeAfterImgs > :last-child {
+    margin: 0px 20px 30px 20px;
+  }
+  .skillsTitle,
+  .portfolioTitle,
+  #about {
+    font-size: 26px;
+  }
+  .formTitle {
+    font-size: 26px;
+  }
+}
+
+/* Surface Duo */
+@media only screen and (min-width: 540px) {
+  .beforeAfterArrow {
+    top: 8px;
+    left: -126px;
+  }
+  .arrowImg {
+    width: 98px;
+  }
+  .faceGraphic {
+    width: 174px;
+  }
+  .ImgEffect {
+    height: 246px;
+  }
+  .introDescription {
+    font-size: 24px;
+    line-height: 40px;
+    width: 486px;
+    margin-bottom: 8px;
+    margin-left: 30px;
+  }
+  .introLine {
+    font-size: 36px;
+  }
+  .myNameValue {
+    font-size: 54px;
+  }
+  .effectGraphic {
+    margin-bottom: 18px;
+  }
+  .intro {
+    margin: 36px 0px 14px 30px;
+  }
+  .responsiveWeb {
+    margin-top: 28px;
+  }
+  .webText {
+    left: -70px;
+    font-size: 24px;
+    width: 150px;
+    line-height: 26px;
+  }
+  .webText > span {
+    margin-left: 16px;
+  }
+  .aboutIntroText {
+    font-size: 20px;
+    line-height: 34px;
+    margin-left: 30px;
+    word-spacing: 2px;
+  }
+  .aboutWebSkill {
+    margin: 0 80px 20px 80px;
+  }
+  .extraBox {
+    margin: 30px 80px 0px 80px;
+  }
+  .landingSocialMedia {
+    margin: 0px 80px 10px 80px;
+  }
+  .project1Box {
+    margin: 0px 80px 20px 80px;
+    min-height: 120px;
+  }
+  .orthoViewBtn {
+    top: 37px;
+  }
+  .orthoProjectText {
+    line-height: 31px;
+    font-size: 18px;
+  }
+  .aboutMeCard {
+    width: 330px;
+    height: 348px;
+    border-width: 4px;
+  }
+  .aboutCardHeading {
+    font-size: 22px;
+    top: 176px;
+  }
+  div.aboutCardText {
+    font-size: 18px;
+    padding-left: 18px;
+    top: 216px;
+    line-height: 31px;
+  }
+  [src="svgs/user.svg"] {
+    top: 30px;
+    width: 154px;
+    margin-left: -77px;
+  }
+  [src="svgs/think1.svg"],
+  [src="svgs/heart1.svg"] {
+    width: 136px;
+    margin-left: -68px;
+  }
+  [src="svgs/think1.svg"] {
+    top: 18px;
+  }
+  [src="svgs/heart1.svg"] {
+    top: 24px;
+  }
+  .alice-carousel__prev-btn,
+  .alice-carousel__next-btn {
+    font-size: 60px;
+  }
+  .alice-carousel__prev-btn {
+    left: 36px;
+  }
+  .alice-carousel__next-btn {
+    right: 36px;
+  }
+  .formOption,
+  .messageWrapper,
+  .formBtns,
+  footer {
+    padding: 0px 80px;
+  }
+  .skillsTitle,
+  .portfolioTitle,
+  #about,
+  .formTitle {
+    font-size: 30px;
+    margin-bottom: 34px;
+    padding-left: 30px;
+  }
+  .orthoProject {
+    height: 120px;
+    background-size: 586px;
+    background-position: top -313px right -90px;
+  }
+  .aboutIconBullet {
+    margin-left: 22px;
+    font-size: 28px;
+    line-height: 21px;
+  }
+  .formText {
+    font-size: 18px;
+    max-width: initial;
+    padding-left: 80px;
+    padding-right: 75px;
+    line-height: 24px;
+    margin-top: initial;
+    margin-bottom: 20px;
+  }
+  .aboutMeQuote {
+    font-size: 24px;
+    letter-spacing: 0.8px;
+  }
+  .aboutLeftQuote {
+    font-size: 52px;
+  }
+  .underline {
+    margin-top: 14px;
+  }
+  .project1Title {
+    margin-top: 1px;
+  }
+  .orthoTopTitle {
+    font-size: 23px;
+    letter-spacing: 0.5px;
+    margin-bottom: 1px;
+  }
+  .orthoBottomTitle {
+    font-size: 17px;
+    letter-spacing: 0.4px;
+  }
+  .orthoLink {
+    font-size: 18px;
+  }
+  .orthoLogo {
+    width: 36px;
+    margin-right: 5px;
+  }
+  .checkSocialMedia {
+    font-size: 18px;
+  }
+  #contact {
+    padding-bottom: 54px;
+  }
+}
+
+@media only screen and (min-width: 654px) {
+  .ImgEffect {
+    height: 296px;
+  }
+  .faceGraphic {
+    width: 184px;
+    margin-top: 62px;
+  }
+  .introDescription {
+    font-size: 26px;
+    width: 526px;
+    line-height: 43px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
+  .intro {
+    margin: 46px 0px 24px 40px;
+  }
+  .introLine {
+    font-size: 38px;
+  }
+  .myNameValue {
+    font-size: 58px;
+  }
+  .effectGraphic {
+    margin-bottom: 26px;
+  }
+  .icon-arrows span,
+  .icon-arrows::after,
+  .icon-arrows::before {
+    width: 18px;
+    height: 18px;
+  }
+  .responsiveWeb {
+    width: 610px;
+    height: 500px;
+    margin: 44px auto 20px auto;
+  }
+  .webText {
+    top: 260px;
+    left: 70px;
+    width: 190px;
+    font-size: 32px;
+    line-height: 36px;
+    word-spacing: 2px;
+  }
+  .webText > span {
+    margin-left: 10px;
+  }
+  .webMobileImg {
+    top: 24px;
+    left: 20px;
+  }
+  .webTabletImg {
+    top: -4px;
+    left: 150px;
+  }
+  .webLaptopImg {
+    top: -4px;
+    left: 326px;
+    margin-left: 0px;
+  }
+  .webDesktopImg {
+    top: 228px;
+    left: 314px;
+    margin-left: 0px;
+  }
+  .strokeImg1 {
+    left: 77px;
+    top: 72px;
+  }
+  .strokeImg2 {
+    left: 267px;
+    top: 72px;
+    -webkit-transform: initial;
+            transform: initial;
+  }
+  .strokeImg3 {
+    left: 460px;
+    top: 190px;
+  }
+  .aboutMeCard {
+    width: 380px;
+    height: 390px;
+  }
+  .aboutCardHeading {
+    font-size: 24px;
+    top: 202px;
+  }
+  div.aboutCardText {
+    font-size: 20px;
+    top: 240px;
+    padding-right: 22px;
+    padding-left: 26px;
+    word-spacing: 2.8px;
+    line-height: 34px;
+  }
+  [src="svgs/user.svg"] {
+    width: 164px;
+    margin-left: -82px;
+    top: 42px;
+  }
+  [src="svgs/think1.svg"],
+  [src="svgs/heart1.svg"] {
+    width: 146px;
+    margin-left: -73px;
+  }
+  [src="svgs/think1.svg"] {
+    top: 28px;
+  }
+  [src="svgs/heart1.svg"] {
+    top: 32px;
+  }
+  .navMyName {
+    left: 84px;
+    right: initial;
+  }
+  .navJobTitle {
+    left: 83px;
+    right: initial;
+  }
+  .navToggleBtn {
+    display: none;
+  }
+  .desktopNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .aboutIntroText {
+    margin-bottom: 40px;
+    margin-left: 40px;
+  }
+  .orthoProjectText {
+    font-size: 18px;
+    line-height: 31px;
+    word-spacing: 1px;
+  }
+  .alice-carousel__prev-btn,
+  .alice-carousel__next-btn {
+    font-size: 68px;
+    top: 140px;
+  }
+  .alice-carousel__prev-btn {
+    left: 56px;
+  }
+  .alice-carousel__next-btn {
+    right: 56px;
+  }
+  .quote {
+    margin-bottom: 50px;
+  }
+  .underline {
+    height: 4px;
+  }
+  .aboutIconText {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .iconDropdown {
+    padding-top: 26px;
+  }
+  .aboutIconBullet {
+    line-height: 24px;
+  }
+  .skillsTitle,
+  .portfolioTitle,
+  #about,
+  .formTitle {
+    font-size: 32px;
+    padding-left: 40px;
+  }
+  .carouselContainer {
+    margin-bottom: 34px;
+  }
+  li.alice-carousel__dots-item {
+    width: 16px;
+    height: 16px;
+  }
+  .aboutWebSkill {
+    margin: 0 100px 20px 100px;
+    height: 80px;
+    padding-top: 25px;
+  }
+  .newIconOpenBtn {
+    height: 52px;
+    width: 64px;
+    top: 14px;
+    border-width: 3px;
+  }
+  .newHtmlIcon {
+    width: 50px;
+    top: 14px;
+  }
+  .iconDropdown {
+    height: calc(100% - 80px);
+    top: 80px;
+  }
+  .arrowDown {
+    font-size: 34px;
+    margin-left: 2px;
+  }
+  .newIconTitle {
+    font-size: 32px;
+  }
+  .orthoProject {
+    background-size: 686px;
+    background-position: top -357px right -80px;
+  }
+  .formText {
+    font-size: 20px;
+    padding-left: 120px;
+    padding-right: 95px;
+    line-height: 32px;
+    padding-right: 108px;
+  }
+  .formIcon {
+    font-size: 28px;
+    right: 20px;
+  }
+  #fullNameIcon {
+    right: 22px;
+  }
+  .inputPlaceholder {
+    font-size: 20px;
+    top: 24px;
+    left: 18px;
+  }
+  .contactFormInput {
+    height: 70px;
+    font-size: 20px;
+    padding-left: 16px;
+    padding-right: 48px;
+  }
+  .formOption,
+  .messageWrapper,
+  .formBtns,
+  footer {
+    padding: 0px 120px;
+  }
+  #messageInput {
+    height: 220px;
+    padding-left: 16px;
+  }
+  input.contactFormInput:valid {
+    background-size: 30px;
+    background-position: right 15px center;
+  }
+  .extraBox {
+    margin: 30px 100px 0px 100px;
+  }
+  .landingSocialMedia {
+    margin: 0px 100px 10px 100px;
+  }
+  .orthoViewBtn {
+    width: 64px;
+    height: 56px;
+    top: 33px;
+    border-width: 3px;
+  }
+  .projectArrowDown {
+    font-size: 36px;
+    margin-left: 2px;
+  }
+  .aboutWebSkill.openIconBox {
+    height: 280px;
+  }
+  .backToTopBtn,
+  .sendBtn {
+    font-size: 18px;
+    height: 60px;
+  }
+  .backToTopIcon {
+    font-size: 30px;
+    left: 18px;
+    top: 13px;
+  }
+  .arrowImg {
+    width: 120px;
+  }
+  .beforeAfterArrow {
+    left: -152px;
+  }
+  .orthoLink {
+    top: 20px;
+  }
+  .orthoProjectContent {
+    padding-top: 70px;
+  }
+  .checkSocialMedia {
+    font-size: 20px;
+  }
+  .socialMediaText {
+    font-size: 16px;
+  }
+  #portfolio {
+    padding-bottom: 60px;
+  }
+}
+
+/* iPad */
+@media only screen and (min-width: 768px) {
+  .intro {
+    margin-left: 50px;
+  }
+  .introDescription {
+    font-size: 32px;
+    width: 650px;
+    line-height: 54px;
+    margin-left: 50px;
+  }
+  .skillsTitle,
+  .portfolioTitle,
+  #about,
+  .formTitle {
+    padding-left: 50px;
+    font-size: 34px;
+  }
+  .ImgEffect {
+    height: 326px;
+  }
+  .faceGraphic {
+    margin-top: 70px;
+    width: 198px;
+  }
+  .introLine {
+    font-size: 40px;
+  }
+  .myNameValue {
+    font-size: 64px;
+  }
+  .responsiveWeb {
+    width: 700px;
+    height: 220px;
+    margin: 10px auto 70px auto;
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  .webText {
+    top: 196px;
+    left: 58px;
+    width: initial;
+    font-size: 28px;
+  }
+  .webText > span {
+    margin-left: 0px;
+  }
+  .webMobileImg {
+    top: 36px;
+    left: -110px;
+  }
+  .webTabletImg {
+    top: 0px;
+    left: 20px;
+  }
+  .webLaptopImg {
+    top: -4px;
+    left: 196px;
+    margin-left: 0px;
+  }
+  .webDesktopImg {
+    top: -20px;
+    left: 504px;
+    margin-left: 0px;
+  }
+  .strokeImg1 {
+    left: -53px;
+  }
+  .strokeImg2 {
+    left: 137px;
+    -webkit-transform: initial;
+            transform: initial;
+  }
+  .strokeImg3 {
+    left: 479px;
+    -webkit-transform: initial;
+            transform: initial;
+  }
+  .stroke {
+    top: 86px;
+  }
+  .aboutIntroText {
+    font-size: 22px;
+    line-height: 37px;
+    margin-left: 50px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    word-spacing: 2.4px;
+  }
+  .aboutLeftQuote {
+    font-size: 58px;
+  }
+  .aboutMeQuote {
+    font-size: 26px;
+  }
+  .underline {
+    height: 5px;
+    width: 60px;
+  }
+  .aboutCardHeading {
+    font-size: 28px;
+    top: 214px;
+  }
+  .aboutMeCard {
+    width: 420px;
+    height: 420px;
+  }
+  div.aboutCardText {
+    font-size: 22px;
+    top: 268px;
+    padding-left: 28px;
+    line-height: 37px;
+  }
+  [src="svgs/user.svg"] {
+    width: 178px;
+    margin-left: -89px;
+    top: 40px;
+  }
+  [src="svgs/think1.svg"] {
+    width: 160px;
+    margin-left: -80px;
+    top: 32px;
+  }
+  [src="svgs/heart1.svg"] {
+    width: 170px;
+    margin-left: -85px;
+    top: 32px;
+  }
+  .project1Box {
+    margin: 0px 120px 20px 120px;
+    min-height: 140px;
+  }
+  .orthoProject {
+    height: 140px;
+  }
+  .aboutWebSkill {
+    margin: 0 140px 26px 140px;
+    height: 90px;
+    padding-top: 28px;
+  }
+  .newHtmlIcon {
+    width: 60px;
+  }
+  .newIconOpenBtn {
+    height: 62px;
+    width: 72px;
+  }
+  .arrowDown {
+    font-size: 42px;
+  }
+  .iconDropdown {
+    height: calc(100% - 90px);
+    top: 90px;
+    padding-top: 34px;
+  }
+  .aboutIconText {
+    font-size: 22px;
+    line-height: 30px;
+    padding-left: 7px;
+  }
+  .extraBox {
+    margin: 30px 140px 0px 140px;
+  }
+  .extraSkillsTitle {
+    font-size: 24px;
+  }
+  .alice-carousel__prev-btn,
+  .alice-carousel__next-btn {
+    font-size: 78px;
+    top: 160px;
+  }
+  .alice-carousel__prev-btn {
+    left: 76px;
+  }
+  .alice-carousel__next-btn {
+    right: 76px;
+  }
+  li.alice-carousel__dots-item {
+    width: 18px;
+    height: 18px;
+    margin: 0 12px;
+  }
+  .formOption,
+  .messageWrapper,
+  .formBtns,
+  footer {
+    padding: 0px 160px;
+  }
+  .formText {
+    padding-left: 160px;
+    padding-right: 160px;
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .landingSocialMedia {
+    margin: 0px 140px 14px 140px;
+  }
+  .backToTopBtn,
+  .sendBtn {
+    font-size: 22px;
+    height: 66px;
+    border-radius: 40px;
+  }
+  .sendBtn {
+    margin-top: 50px;
+  }
+  .backToTopIcon {
+    font-size: 36px;
+    left: 20px;
+  }
+  .aboutWebSkill.openIconBox {
+    height: 330px;
+  }
+  #cssWebSkill.openIconBox {
+    height: 420px;
+  }
+  .aboutIconTextWrapper {
+    margin-bottom: 18px;
+  }
+  .aboutIconBullet {
+    font-size: 34px;
+    line-height: 28px;
+  }
+  .arrowImg {
+    width: 130px;
+  }
+  .beforeAfterArrow {
+    left: -162px;
+  }
+  .checkSocialMedia {
+    font-size: 22px;
+  }
+  .socialMediaBtn {
+    height: 110px;
+    font-size: 48px;
+  }
+  .socialMediaText {
+    font-size: 18px;
+    margin-top: 6px;
+  }
+  #contact {
+    padding-top: 60px;
+  }
+  .orthoLogo {
+    width: 46px;
+    margin-right: 6px;
+  }
+  .orthoTopTitle {
+    font-size: 30px;
+  }
+  .orthoBottomTitle {
+    font-size: 22px;
+    word-spacing: 1px;
+  }
+  .orthoOverlay {
+    padding-left: 28px;
+  }
+  .orthoViewBtn {
+    width: 78px;
+    height: 70px;
+    top: 36px;
+  }
+  .projectArrowDown {
+    font-size: 44px;
+    margin-left: 3px;
+  }
+  .orthoProjectText {
+    font-size: 20px;
+    margin-left: 26px;
+    line-height: 34px;
+    word-spacing: 2px;
+  }
+  .orthoLink {
+    font-size: 20px;
+  }
+  .resultImgText {
+    font-size: 18px;
+  }
+  .orthoVisitLink {
+    left: 26px;
+  }
+  .orthoGithubLink {
+    right: 26px;
+  }
+  .contactFormInput {
+    height: 80px;
+    padding-left: 20px;
+    font-size: 24px;
+    padding-right: 58px;
+  }
+  .inputPlaceholder {
+    font-size: 24px;
+    top: 26px;
+    left: 22px;
+  }
+  .contactFormInput:not(:placeholder-shown) ~ .inputPlaceholder,
+  .contactFormInput:focus ~ .inputPlaceholder,
+  .contactFormInput:focus-within ~ .inputPlaceholder {
+    font-size: 16px;
+    top: 12px;
+  }
+  .formIcon {
+    font-size: 32px;
+    top: 24px;
+    right: 22px;
+  }
+  #fullNameIcon {
+    right: 24px;
+  }
+  input.contactFormInput:valid {
+    background-size: 36px;
+    background-position: right 18px center;
+  }
+  .newIconTitle {
+    font-size: 38px;
+  }
+  .designIconText,
+  .webSkillIconText {
+    font-size: 18px;
+    margin-top: 2px;
+  }
+  .icon-arrows span,
+  .icon-arrows::after,
+  .icon-arrows::before {
+    width: 20px;
+    height: 20px;
+  }
+  #messageInput {
+    padding-left: 20px;
+  }
+  .quote {
+    margin-bottom: 60px;
+  }
+}
+
+@media only screen and (min-width: 834px) {
+  .beforeAfterArrow {
+    left: -172px;
+  }
+  .arrowImg {
+    width: 140px;
+  }
+  .webText {
+    font-size: 30px;
+  }
+  .intro {
+    margin-top: 50px;
+  }
+  .introLine {
+    font-size: 42px;
+    word-spacing: 3px;
+  }
+  .myNameValue {
+    font-size: 68px;
+  }
+  .ImgEffect {
+    height: 356px;
+  }
+  .faceGraphic {
+    width: 204px;
+    margin-top: 84px;
+  }
+  .responsiveWeb {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .aboutMeQuote {
+    font-size: 30px;
+  }
+  .aboutLeftQuote {
+    font-size: 62px;
+    margin-bottom: 12px;
+  }
+  .underline {
+    height: 6px;
+    margin-top: 18px;
+  }
+  .aboutWebSkill {
+    margin: 0 160px 26px 160px;
+  }
+  .extraBox {
+    margin: 38px 160px 0px 160px;
+    height: 176px;
+    padding-top: 26px;
+  }
+  .socialMediaWrapper {
+    padding-top: 38px;
+  }
+  .landingSocialMedia {
+    margin: 0px 160px 14px 160px;
+  }
+  .extraSkillsTitle {
+    font-size: 26px;
+    padding-left: 22px;
+    margin-bottom: 22px;
+  }
+  .orthoProject {
+    background-size: 756px;
+    background-position: top -397px right -70px;
+  }
+  .project1Box {
+    margin: 0px 130px 20px 130px;
+  }
+  .skillsTitle,
+  .portfolioTitle,
+  #about,
+  .formTitle {
+    font-size: 38px;
+  }
+  .icon-arrows span,
+  .icon-arrows::after,
+  .icon-arrows::before {
+    width: 22px;
+    height: 22px;
+  }
+  .alice-carousel__prev-btn,
+  .alice-carousel__next-btn {
+    top: 180px;
+  }
+  .alice-carousel__prev-btn {
+    left: 96px;
+  }
+  .alice-carousel__next-btn {
+    right: 96px;
+  }
+  ul.alice-carousel__dots {
+    margin-top: 26px;
+  }
+  li.alice-carousel__dots-item {
+    width: 20px;
+    height: 20px;
+    margin: 0 14px;
+  }
+  .contactFormInput {
+    height: 88px;
+    font-size: 26px;
+    padding-top: 24px;
+    border-width: 3px;
+  }
+  .inputPlaceholder {
+    font-size: 26px;
+    top: 32px;
+  }
+  .contactFormInput:not(:placeholder-shown) ~ .inputPlaceholder,
+  .contactFormInput:focus ~ .inputPlaceholder,
+  .contactFormInput:focus-within ~ .inputPlaceholder {
+    font-size: 18px;
+    top: 16px;
+  }
+  #messageInput {
+    height: 250px;
+    padding-top: 40px;
+  }
+  .formIcon {
+    font-size: 36px;
+    top: 28px;
+  }
+  #fullNameIcon {
+    right: 25px;
+  }
+  .backToTopBtn,
+  .sendBtn,
+  form:invalid .sendBtn,
+  .contactFormInput:focus,
+  .contactFormInput:focus-within {
+    border-width: 3px;
+  }
+  #contact {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+  .introDescription {
+    word-spacing: 6px;
+  }
+  .aboutIntroText {
+    font-size: 24px;
+    line-height: 40px;
+    word-spacing: 3px;
+    margin-bottom: 60px;
+  }
+  .aboutMeCard {
+    width: 460px;
+    height: 456px;
+  }
+  [src="svgs/user.svg"] {
+    width: 190px;
+    margin-left: -95px;
+    top: 52px;
+  }
+  [src="svgs/think1.svg"] {
+    width: 170px;
+    margin-left: -85px;
+  }
+  [src="svgs/heart1.svg"] {
+    width: 178px;
+    margin-left: -89px;
+  }
+  .aboutCardHeading {
+    top: 234px;
+    font-size: 30px;
+  }
+  div.aboutCardText {
+    font-size: 24px;
+    top: 286px;
+    line-height: 40px;
+  }
+  .formText {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 928px) {
+  .skillsTitle,
+  .portfolioTitle,
+  #about,
+  .formTitle {
+    font-size: 40px;
+  }
+  .introDescription {
+    font-size: 34px;
+    width: 660px;
+    line-height: 57px;
+  }
+  .introLine {
+    font-size: 46px;
+  }
+  .myNameValue {
+    font-size: 72px;
+  }
+  .formOption,
+  .messageWrapper,
+  .formBtns,
+  footer {
+    padding: 0px 180px;
+  }
+  .formText {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+  .aboutIconText {
+    font-size: 24px;
+  }
+  .designIconText,
+  .webSkillIconText {
+    font-size: 20px;
+  }
+  .responsiveWeb {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    margin-top: 26px;
+    margin-bottom: 100px;
+  }
+  .webText {
+    font-size: 28px;
+  }
+  .aboutWebSkill {
+    margin: 0 170px 26px 170px;
+  }
+  .extraBox {
+    margin: 38px 170px 0px 170px;
+  }
+  .landingSocialMedia {
+    margin: 0px 170px 14px 170px;
+  }
+  .orthoProject {
+    background-size: 836px;
+    background-position: top -446px right -70px;
+  }
+  .alice-carousel__prev-btn {
+    left: 130px;
+  }
+  .alice-carousel__next-btn {
+    right: 130px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .webText {
+    font-size: 26px;
+  }
+  .responsiveWeb {
+    -webkit-transform: initial;
+            transform: initial;
+  }
+  .alice-carousel__prev-btn {
+    left: 180px;
+  }
+  .alice-carousel__next-btn {
+    right: 180px;
+  }
+  .introDescription {
+    width: 950px;
+  }
+  .formText {
+    padding-right: initial;
+    padding-left: 120px;
+  }
+  .skillsTitle,
+  .portfolioTitle,
+  #about,
+  .formTitle {
+    font-size: 38px;
+    word-spacing: 2.8px;
+  }
+  .formOption,
+  .messageWrapper,
+  .formBtns,
+  footer {
+    padding: 0px 200px;
+  }
+  .orthoProjectText {
+    margin-right: 21px;
+  }
+}
+
+@media only screen and (hover: hover) {
+  .desktopNav > a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  .backToTopBtn:hover {
+    background-color: rgba(109, 109, 109, 0.5);
+  }
+  .newIconOpenBtn:hover {
+    background-color: rgba(150, 150, 150, 0.3);
+  }
+  .socialMediaBtn:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .socialMediaBtn:hover > :first-child {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  .orthoViewBtn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .orthoLink:hover {
+    text-decoration: underline;
+  }
+  .sendBtn:hover {
+    background-color: #4c8d4e;
+  }
+  .alice-carousel__next-btn span:hover::after,
+  .alice-carousel__prev-btn span:hover::after {
+    color: #ffffff;
+  }
+}
 /*# sourceMappingURL=mobile.css.map */

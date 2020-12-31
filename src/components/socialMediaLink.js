@@ -4,7 +4,10 @@ class SocialMediaLink extends React.Component {
   render() {
     return (
       <a href={this.props.url} target="_blank" className="socialMediaBtn">
-        <i className={"fab " + this.props.icon}></i>
+        <div>
+          <i className={"fab socialMediaIcon " + this.props.icon}></i>
+          <div className="socialMediaText">{this.props.text}</div>
+        </div>
       </a>
     );
   }
