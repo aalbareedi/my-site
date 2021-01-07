@@ -1,0 +1,222 @@
+* {
+  /* Remove Gray Highlight When Tapping Links in Mobile Safari */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-appearance: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f2f5;
+  font-family: "Baloo Da 2", cursive;
+}
+
+.wrapper {
+  background-color: white;
+  padding: 20px 22px 30px 22px;
+  max-width: 850px;
+  margin: 0 auto;
+  -webkit-print-color-adjust: exact;
+}
+
+.logo {
+  width: 58px;
+  margin-right: 16px;
+  margin-bottom: 1px;
+  margin-left: -1px;
+}
+
+.name {
+  font-family: "PT Sans", sans-serif;
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: 1px;
+}
+
+.jobTitle {
+  letter-spacing: 0.1px;
+  word-spacing: 2.3px;
+  font-size: 16px;
+  margin-left: -1px;
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.contact {
+  margin-left: 73px;
+  padding-bottom: 18px;
+}
+
+.contactText {
+  font-size: 16px;
+  margin-left: 6px;
+  color: #0303e6;
+  text-decoration: none;
+}
+
+.contactIcon {
+  color: #aeb7c3;
+  font-size: 21px;
+}
+
+#addressIcon {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+#phoneIcon {
+  margin-right: -1px;
+}
+
+#githubIcon {
+  font-size: 22px;
+  margin-right: -1px;
+}
+
+.contactInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 12px;
+}
+
+.headings {
+  font-family: "PT Sans", sans-serif;
+  letter-spacing: 0.2px;
+  font-size: 24px;
+  border-top: 3px solid #073763;
+  padding-top: 12px;
+}
+
+.webSkills {
+  background: gainsboro;
+  padding: 10px 10px 5px 10px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.webSkill {
+  display: inline-block;
+  padding: 5px 8px 5px 8px;
+  margin-right: 2px;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  background-color: #073763;
+  color: whitesmoke;
+  letter-spacing: 0.5px;
+}
+
+.skillYears {
+  margin-bottom: 7px;
+  padding-left: 1px;
+  line-height: 19px;
+  word-spacing: 1.8px;
+}
+
+.skillYears:nth-of-type(2) {
+  margin-top: 10px;
+}
+
+.yearText {
+  font-weight: bold;
+}
+
+#yearDot {
+  letter-spacing: 1.6px;
+  margin-left: 1px;
+}
+
+.skills {
+  margin-bottom: 20px;
+  margin-top: 8px;
+}
+
+.projects,
+.exp,
+.edu {
+  margin-bottom: 20px;
+  margin-top: 16px;
+}
+
+.expDescription {
+  word-spacing: 1px;
+  font-style: italic;
+  margin-bottom: 2px;
+}
+
+.projectBox {
+  margin-bottom: 14px;
+}
+
+.projectLink {
+  font-size: 15px;
+  margin-top: 6px;
+  font-style: italic;
+  display: inline-block;
+  color: #0303e6;
+  text-decoration: none;
+}
+
+.projectImgLink {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.projectTitle {
+  font-weight: bold;
+  font-size: 18px;
+  word-spacing: 1.4px;
+}
+
+.projectDescription {
+  word-spacing: 1px;
+}
+
+.skillInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 6px;
+}
+
+.skillPoint {
+  font-size: 28px;
+  margin-right: 3px;
+  line-height: 22px;
+}
+
+.skillText {
+  line-height: 22px;
+  word-spacing: 1px;
+}
+
+.orthoImg {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.school {
+  margin-bottom: 8px;
+}
+
+.eduCourse {
+  font-style: italic;
+  margin-top: 1px;
+  margin-bottom: 2px;
+}
+
+a.contactText:active,
+a.projectLink:active {
+  text-decoration: underline;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */

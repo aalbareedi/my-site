@@ -1,5 +1,19 @@
 /* iPhone 6/7/8 (safari) */
 @media only screen and (min-width: 375px) {
+  .orthoQuoteL {
+    margin-left: -147px;
+    top: -2px;
+  }
+  .orthoQuoteR {
+    margin-right: -147px;
+    top: 79px;
+  }
+  .projectQuoteText {
+    padding-top: 22px;
+  }
+  .resumeBtnWrapper {
+    padding: 20px 80px;
+  }
   li.alice-carousel__dots-item:not(:last-child) {
     margin-right: 14px;
   }
@@ -118,6 +132,25 @@
 
 /* iPhone 6/7/8 PLUS - iphone 11 Pro Max */
 @media only screen and (min-width: 414px) {
+  .orthoQuote {
+    font-size: 42px;
+  }
+  .projectQuoteText {
+    width: 306px;
+    padding-top: 30px;
+    padding-bottom: 54px;
+  }
+  .orthoQuoteL {
+    margin-left: -167px;
+    top: 2px;
+  }
+  .orthoQuoteR {
+    top: 64px;
+    margin-right: -167px;
+  }
+  .resumeBtnWrapper {
+    padding: 20px 90px;
+  }
   .orthoProjectText {
     margin-right: 20px;
   }
@@ -215,6 +248,9 @@
 
 /* Surface Duo */
 @media only screen and (min-width: 540px) {
+  .resumeBtnWrapper {
+    padding: 20px 150px;
+  }
   .beforeAfterArrow {
     top: 8px;
     left: -126px;
@@ -264,6 +300,7 @@
     line-height: 34px;
     margin-left: 30px;
     word-spacing: 2px;
+    margin-bottom: 20px;
   }
   .aboutWebSkill {
     margin: 0 80px 20px 80px;
@@ -398,6 +435,22 @@
 }
 
 @media only screen and (min-width: 654px) {
+  .orthoQuote {
+    font-size: 48px;
+  }
+  .projectQuoteText {
+    width: 338px;
+    font-size: 20px;
+    line-height: 26px;
+    padding-top: 34px;
+  }
+  .orthoQuoteL {
+    margin-left: -207px;
+  }
+  .orthoQuoteR {
+    margin-right: -207px;
+    top: 70px;
+  }
   .ImgEffect {
     height: 296px;
   }
@@ -603,9 +656,6 @@
     background-size: 686px;
     background-position: top -357px right -80px;
   }
-  // #contact {
-  //   padding-bottom: 70px;
-  // }
   .formText {
     font-size: 20px;
     padding-left: 120px;
@@ -665,9 +715,14 @@
     height: 280px;
   }
   .backToTopBtn,
-  .sendBtn {
+  .sendBtn,
+  .resumeBtn {
     font-size: 18px;
     height: 60px;
+  }
+  .resumeBtnWrapper {
+    margin-bottom: 12px;
+    padding: 20px 170px;
   }
   .backToTopIcon {
     font-size: 30px;
@@ -699,6 +754,33 @@
 
 /* iPad */
 @media only screen and (min-width: 768px) {
+  .orthoQuoteL {
+    margin-left: -237px;
+  }
+  .orthoQuoteR {
+    margin-right: -237px;
+    top: 72px;
+  }
+  .projectQuoteText {
+    width: 370px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .desktopResumeBtn {
+    display: flex;
+    position: absolute;
+    padding: 8px 20px;
+    top: 13px;
+    right: 282px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #313131;
+    word-spacing: 1px;
+  }
+  .resumeBtnWrapper {
+    display: none;
+  }
   .intro {
     margin-left: 50px;
   }
@@ -1032,6 +1114,21 @@
 }
 
 @media only screen and (min-width: 834px) {
+  .orthoQuote {
+    font-size: 50px;
+  }
+  .orthoQuoteL {
+    margin-left: -245px;
+  }
+  .orthoQuoteR {
+    margin-right: -245px;
+  }
+  .projectQuoteText {
+    width: 408px;
+    font-size: 24px;
+    line-height: 30px;
+    padding-bottom: 58px;
+  }
   .beforeAfterArrow {
     left: -172px;
   }
@@ -1174,7 +1271,6 @@
     font-size: 24px;
     line-height: 40px;
     word-spacing: 3px;
-    margin-bottom: 60px;
   }
   .aboutMeCard {
     width: 460px;
@@ -1211,6 +1307,32 @@
 }
 
 @media only screen and (min-width: 928px) {
+  .orthoQuoteL {
+    margin-left: -274px;
+  }
+  .orthoQuoteR {
+    margin-right: -274px;
+    top: 100px;
+  }
+  .orthoQuote {
+    font-size: 56px;
+  }
+  .projectQuoteText {
+    padding-bottom: 76px;
+    width: 438px;
+    font-size: 26px;
+    padding-top: 48px;
+    line-height: 32px;
+  }
+  .orthoProjectText {
+    word-spacing: 2.2px;
+  }
+  .aboutIntroText {
+    margin-bottom: 60px;
+  }
+  .desktopResumeBtn {
+    right: 286px;
+  }
   .skillsTitle,
   .portfolioTitle,
   #about,
@@ -1275,6 +1397,18 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  .projectQuoteText {
+    padding-top: 54px;
+  }
+  .orthoQuoteL {
+    top: 6px;
+  }
+  .orthoQuoteR {
+    top: 110px;
+  }
+  .desktopResumeBtn {
+    right: 288px;
+  }
   .webText {
     font-size: 26px;
   }
@@ -1313,6 +1447,12 @@
 }
 
 @media only screen and (hover: hover) {
+  .desktopResumeBtn:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  .resumeBtn:hover {
+    background-color: rgba(253, 253, 253, 0.4);
+  }
   .desktopNav > a:hover {
     background-color: rgba(255, 255, 255, 0.3);
   }

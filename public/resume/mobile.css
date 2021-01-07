@@ -1,0 +1,40 @@
+@media only screen and (min-width: 540px) {
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contactSection:last-child {
+    margin-left: 24px;
+  }
+  .wrapper {
+    padding: 40px 42px 30px 42px;
+  }
+  .projectBox {
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .projectBox {
+    margin-right: initial;
+    width: 50%;
+  }
+  .projectBox:first-child {
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (hover: hover) {
+  .contactText:hover,
+  .projectLink:hover {
+    text-decoration: underline;
+    color: #af4cce;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */

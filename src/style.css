@@ -96,8 +96,8 @@ body {
   height: 64px;
   position: fixed;
   top: -64px;
-  -webkit-transition: top 0.3s;
-  transition: top 0.3s;
+  -webkit-transition: top 0.4s;
+  transition: top 0.4s;
   cursor: pointer;
   color: #212121;
   z-index: 10;
@@ -403,7 +403,7 @@ input.contactFormInput:valid ~ .formIcon {
 }
 
 .aboutIntroText {
-  margin: 0px 12px 34px 20px;
+  margin: 0px 12px 10px 20px;
   line-height: 27px;
   word-spacing: 1.4px;
   color: #212121;
@@ -605,6 +605,49 @@ div.responsiveWeb > * {
   font-size: 16px;
   line-height: 1;
   height: 30px;
+}
+
+.desktopResumeBtn {
+  display: none;
+}
+
+a.desktopResumeBtn:active {
+  background-color: rgba(100, 100, 100, 0.4);
+}
+
+.resumeBtnWrapper {
+  padding: 20px 60px;
+  margin-bottom: 10px;
+  word-spacing: 1px;
+}
+
+.resumeBtn {
+  letter-spacing: 0.2px;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  height: 50px;
+  width: 100%;
+  border: 2px solid;
+  border-color: rgba(220, 220, 220, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  color: #f5f5f5;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+a.resumeBtn:active {
+  background-color: rgba(130, 130, 130, 0.4);
 }
 
 .socialMediaWrapper {
@@ -911,6 +954,43 @@ a.newIconOpenBtn:active {
   word-spacing: 1.4px;
 }
 
+.projectQuoteWrapper {
+  position: relative;
+}
+
+.projectQuoteText {
+  color: #262626;
+  width: 232px;
+  padding-top: 18px;
+  padding-bottom: 48px;
+  margin: 0 auto;
+  word-spacing: 1px;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "PT Sans", sans-serif;
+}
+
+.orthoQuote {
+  color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  z-index: -1;
+  font-size: 38px;
+}
+
+.orthoQuoteL {
+  top: -4px;
+  left: 50%;
+  margin-left: -120px;
+}
+
+.orthoQuoteR {
+  top: 76px;
+  right: 50%;
+  margin-right: -120px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .openProjectBox .orthoProjectContent {
   margin-bottom: 0px;
   opacity: 1;
@@ -928,7 +1008,7 @@ a.newIconOpenBtn:active {
 
 .orthoProjectContent {
   position: relative;
-  margin-bottom: -2300px;
+  margin-bottom: -2440px;
   padding-top: 64px;
   opacity: 0;
   -webkit-transition: margin-bottom 0.6s, opacity 0.4s;
@@ -1192,14 +1272,14 @@ button.backToTopBtn:active {
 
 .hasEverScrolled.revealChildren > *:nth-child(3) {
   opacity: 1;
-  -webkit-transition: opacity 1.4s;
-  transition: opacity 1.4s;
+  -webkit-transition: opacity 1.2s;
+  transition: opacity 1.2s;
 }
 
 .hasEverScrolled.revealChildren > *:nth-child(4) {
   opacity: 1;
-  -webkit-transition: opacity 2s;
-  transition: opacity 2s;
+  -webkit-transition: opacity 1.8s;
+  transition: opacity 1.8s;
 }
 
 .hasEverScrolled.revealChildren > *:nth-child(5) {
@@ -1210,14 +1290,14 @@ button.backToTopBtn:active {
 
 .hasEverScrolled.revealChildren > *:nth-child(6) {
   opacity: 1;
-  -webkit-transition: opacity 1s 0.3s;
-  transition: opacity 1s 0.3s;
+  -webkit-transition: opacity 1s 0.6s;
+  transition: opacity 1s 0.6s;
 }
 
 .hasEverScrolled.revealChildren > *:nth-child(7) {
   opacity: 1;
-  -webkit-transition: opacity 1.5s 0.3s;
-  transition: opacity 1.5s 0.3s;
+  -webkit-transition: opacity 1s 0.9s;
+  transition: opacity 1s 0.9s;
 }
 
 .hasEverScrolled.revealChildren > *:nth-child(8) {

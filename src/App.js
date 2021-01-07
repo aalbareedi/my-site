@@ -342,6 +342,12 @@ class App extends React.Component {
                 to work and desire the opportunity in achieving success.
               </div>
 
+              <div className="resumeBtnWrapper">
+                <a className="resumeBtn" href="resume">
+                  View My Resume
+                </a>
+              </div>
+
               <div className="quote scrollReveal">
                 <i className="fas fa-quote-left aboutLeftQuote"></i>
                 <div className="aboutMeQuote">Progression is my obsession.</div>
@@ -636,6 +642,18 @@ class App extends React.Component {
                     developer, so that I can continue to help hardworking
                     professionals grow their business online.
                   </div>
+
+                  <div className="projectQuoteWrapper">
+                    <i className="fas fa-quote-left orthoQuoteL orthoQuote"></i>
+                    <i className="fas fa-quote-left orthoQuoteR orthoQuote"></i>
+                    <div className="projectQuoteText">
+                      Amer is the best web developer ever. He did a marvelous
+                      job on my website.
+                    </div>
+                    {/* <div className="orthoQuoter">
+                      -Orthodontic Speciality Center
+                    </div> */}
+                  </div>
                 </div>
               </div>
             </div>
@@ -835,6 +853,9 @@ class App extends React.Component {
           <img className="navLogoImg" src="svgs/nameLogo.svg" />
           <div className="navMyName">Amer Albareedi</div>
           <div className="navJobTitle">Front-End Web Developer</div>
+          <a className="desktopResumeBtn" href="resume">
+            View My Resume
+          </a>
           <div className="desktopNav">
             <a
               href="#about"
